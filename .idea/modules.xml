@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AppleView.iml" filepath="$PROJECT_DIR$/AppleView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appleviewlib/appleviewlib.iml" filepath="$PROJECT_DIR$/appleviewlib/appleviewlib.iml" />
     </modules>
   </component>
 </project>

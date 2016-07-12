@@ -1,11 +1,9 @@
-package com.ldoublem.appleview.view;
+package com.ldoublem.appleviewlib;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.util.AttributeSet;
-
-import com.ldoublem.appleview.R;
 
 
 /**
@@ -57,10 +55,10 @@ public class LVComputerIpad extends LVComputer {
 
     private void drawContent(Canvas canvas) {
         mPaint.setColor(Color.WHITE);
-        ios = setBitmapSize(R.mipmap.apple, (int) (rectSreeen.width() / 5));
+        ios = setBitmapSize(R.drawable.apple, (int) (rectSreeen.width() / 5));
         canvas.drawBitmap(ios, rectSreeenShow.centerX() - ios.getWidth() - 5,
                 rectSreeenShow.centerY() - ios.getHeight() / 2, mPaint);
-        android = setBitmapSize(R.mipmap.android, (int) (rectSreeenShow.width() / 5));
+        android = setBitmapSize(R.drawable.android, (int) (rectSreeenShow.width() / 5));
         canvas.drawBitmap(android, rectSreeenShow.centerX() + 5,
                 rectSreeenShow.centerY() - android.getHeight() / 2, mPaint);
 

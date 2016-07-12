@@ -1,4 +1,4 @@
-package com.ldoublem.appleview.view;
+package com.ldoublem.appleviewlib;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,8 +8,6 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.util.AttributeSet;
-
-import com.ldoublem.appleview.R;
 
 
 /**
@@ -88,7 +86,7 @@ public class LVComputerDesktop extends LVComputer {
 
 
     private void drawLogo(Canvas canvas) {
-        ios = setBitmapSize(R.mipmap.apple_dark,
+        ios = setBitmapSize(R.drawable.apple_dark,
                 (int) (rectHost.height() / 4f)
         );
         canvas.drawBitmap(ios, rectSreeenWithin.centerX() - ios.getWidth() / 2f,
@@ -248,10 +246,10 @@ public class LVComputerDesktop extends LVComputer {
     }
 
     private void drawContent(Canvas canvas) {
-        ios = setBitmapSize(R.mipmap.apple, (int) (rectSreeen.width() / 10));
+        ios = setBitmapSize(R.drawable.apple, (int) (rectSreeen.width() / 10));
         canvas.drawBitmap(ios, rectSreeenShow.centerX() - ios.getWidth() - 5,
                 rectSreeenShow.centerY() - ios.getHeight() / 2, mPaint);
-        android = setBitmapSize(R.mipmap.android, (int) (rectSreeenShow.width() / 11));
+        android = setBitmapSize(R.drawable.android, (int) (rectSreeenShow.width() / 11));
         canvas.drawBitmap(android, rectSreeenShow.centerX() + 5,
                 rectSreeenShow.centerY() - android.getHeight() / 2, mPaint);
 

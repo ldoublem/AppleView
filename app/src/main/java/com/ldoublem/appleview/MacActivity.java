@@ -5,9 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.ldoublem.appleview.view.LVComputer;
-import com.ldoublem.appleview.view.LVComputerDesktop;
-import com.ldoublem.appleview.view.LVComputerIpad;
+import com.ldoublem.appleviewlib.LVComputer;
+import com.ldoublem.appleviewlib.LVComputerDesktop;
+import com.ldoublem.appleviewlib.LVComputerIpad;
 
 
 public class MacActivity extends AppCompatActivity {

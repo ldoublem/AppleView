@@ -1,4 +1,4 @@
-package com.ldoublem.appleview.view;
+package com.ldoublem.appleviewlib;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -17,8 +17,6 @@ import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-
-import com.ldoublem.appleview.R;
 
 
 /**
@@ -135,10 +133,10 @@ public class LVComputer extends View {
 
     private void drawContent(Canvas canvas) {
         mPaint.setColor(Color.WHITE);
-        ios = setBitmapSize(R.mipmap.apple, (int) (rectSreeen.width() / 10));
+        ios = setBitmapSize(R.drawable.apple, (int) (rectSreeen.width() / 10));
         canvas.drawBitmap(ios, rectSreeenShow.centerX() - ios.getWidth() - 5,
                 rectSreeenShow.centerY() - ios.getHeight() / 2, mPaint);
-        android = setBitmapSize(R.mipmap.android, (int) (rectSreeenShow.width() / 11));
+        android = setBitmapSize(R.drawable.android, (int) (rectSreeenShow.width() / 11));
         canvas.drawBitmap(android, rectSreeenShow.centerX() + 5,
                 rectSreeenShow.centerY() - android.getHeight() / 2, mPaint);
 
